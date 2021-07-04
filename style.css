@@ -1,0 +1,154 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+section{
+    margin-bottom: 200px;
+}
+#home{
+    background-image: url(images/top-banner.png);
+   background-repeat: no-repeat;
+}
+.nav{
+    padding: 0px 80px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav ul li{
+    display: inline-flex;
+    margin-left: 30px;
+}
+.nav a{
+    font-size: 21px;
+    color: crimson;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.nav a:hover{
+    color: darkblue;
+    background-color: aqua;    
+}
+.flex-container{
+    margin: 80px 80px;
+    display: flex;
+}
+.half-width{
+    width: 50%;
+    margin: 0px 30px;
+}
+.half-width h2{
+    font-weight: 800;
+    font-size: 2em;
+    color:rgb(38, 38, 61);
+    line-height: 0;
+}
+.half-width h1 span{
+    font-weight: 800;
+    font-size: 2.9em;
+    color: crimson;
+    line-height: 0;
+}
+.half-width h1{
+    font-weight: 600;
+    font-size: 1.5em;
+    color: blue;
+    line-height: 0;
+}
+
+.half-width h4{
+    font-size: 1.8em;
+    padding-top: 80px;
+    color: rgb(46, 46, 85);
+}
+.half-width p{
+    text-align: justify;
+    font-size: 21px;
+}
+.half-width button a{
+    text-transform: uppercase;
+    color: skyblue;
+    font-size: 30px;
+}
+.half-width button{
+    padding:10px ;
+    border-radius: 12px;
+    background-image: linear-gradient(crimson, rgb(23, 23, 83));
+}
+.half-width button:hover{
+    background: white;
+}
+.half-width button a:hover{
+    color: red;
+}
+.half-width img{
+    width: 100%;   
+}
+
+
+/* About section */
+#about{
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+/* experiance */
+#experiance{
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+h1.exp{
+    font-size: 50px;
+}
+.card1{
+    width: 50%;
+    padding: 30px;
+    margin-right: 30px;
+    border-left: 50px solid ;
+    border-image: linear-gradient(crimson, rgb(23, 23, 83));
+    border-image-slice: 1;   
+}
+.card2{
+    width: 50%;
+    padding: 30px;
+    border-right: 50px solid ;
+    border-image: linear-gradient(crimson, rgb(23, 23, 83));
+    border-image-slice: 1;   
+
+}
+.experiance h1{
+    font-size: 40px;
+}
+.experiance h3{
+    font-size: 22px;
+    color: blue;
+}
+.experiance{
+    display: flex;
+    margin: 60px 60px ;
+}
+.experiance p{
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.experiance div{
+    box-shadow: 10px 10px 40px rgb(34, 1, 1);
+    height: 300px;
+}
+/* Footer */
+footer{
+    text-align: center;
+    font-size: 21px;
+    color: red;
+    font-weight: bold;
+    padding:20px ;
+    background-image: linear-gradient(rgb(5, 5, 44),rgb(43, 120, 143));
+}
