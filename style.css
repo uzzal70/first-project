@@ -131,6 +131,7 @@ a{
     border: 30px solid orangered;
     width: 50%;
     height: 50%; 
+    z-index: -1;
 }
 
 
@@ -302,9 +303,6 @@ footer{
     #check:checked~ul{
         top:0;
     }
-    #home:checked~.nav{
-        display: none;
-        }
     #check:checked~label #open{
         display: none;
         }
