@@ -267,18 +267,23 @@ footer{
 @media (max-width:600px){
     label #open, label #close{
         float: right;
-        line-height: 100px;
+        line-height: 90px;
+        right: 0;
+        position: fixed;
     }
     .nav{
-        padding: 0;
-        margin: 0;
+        padding: 0px;
+        height: 90px;
+        background-color: rgb(13, 185, 185);
         display: block;
         width: 100%;
+        line-height: 50px; 
     }
     .nav img{
-        padding: 10px 0px 0px 10px;
-        position: relative;
+        padding: 10px;
+        position: fixed;
     }
+
     label #open{
         display: block;
     }
@@ -292,6 +297,7 @@ footer{
         padding: 0px;
         text-align: center;
         transition:  all .5s;
+        z-index: 1;
     }
     .nav ul li{
         display: block;
