@@ -29,6 +29,7 @@ label #close{
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
+    z-index:3;
 }
 .nav img{
     position: fixed;
@@ -117,7 +118,8 @@ a{
     color: red;
 }
 .half-width img{
-    width: 100%;  
+    width: 100%;
+    z-index:2;
 }
 .img-border{
     position: relative; 
