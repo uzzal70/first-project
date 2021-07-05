@@ -7,12 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" href="images/logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <section id="home" class="home">
-        <div class="nav">
+        <!-- <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="open"></i>
+                <i class="fas fa-times" id="close"></i>
+            </label> --> 
+        <div class="nav" id="navbar">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="open"></i>
+                <i class="fas fa-times" id="close"></i>
+            </label>
             <img src="images/logo.png" alt="logo" width="80" height="80">
             <ul>
                 <li><a href="#home"> home</a> </li>
@@ -41,12 +52,13 @@
     </section>
     <section id="about">
         <div class="flex-container">
+            <h1 class="about-title">About</h1>
             <div class="half-width">
                 <img src="images/my-bg2.png" alt="">
             </div>
             <div class="half-width">
                 <h2>Hello!</h2>
-                <h1>My name <span>Uzzal Hossain</span></h1>
+                <h1>My name <span>Marzia Rahman</span></h1>
                 <h4>Build Climber and Train Stopper</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nostrum recusandae, corporis dolor
                     fugit alias distinctio? Velit numquam ad enim assumenda laboriosam accusamus minima, mollitia odio,
@@ -78,9 +90,49 @@
             </div>
         </div>
     </section>
+    <section id="contact">
+
+        <form action="">
+            <h1>Contact</h1>
+            <div class="input-group">
+                <input type="text" id="name" placeholder="User name" required >
+                <label for="name">Your Name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="number" placeholder="Number" required>
+                <label for="number">Number</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="gmail" placeholder="Gmail" required>
+                <label for="gmail">Gmail</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="password" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="input-group">
+                <textarea placeholder="Message area" id="message" rows="10"></textarea>
+                <label for="message">Message</label>
+            </div>
+        </form>
+
+    </section>
     <footer>
         © Peter Parker 2021, a Programming Hero initiative.
     </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        document.onclick = function(e){
+            if (e.target.id !== 'navbar') {
+                toggle.classList.remove('active')
+            }
+        }
+        document.onclick = function(){
+            navbar.classList.toggle('active');
+        }
+    </script>
 </body>
+
 
 </html>
