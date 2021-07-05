@@ -117,7 +117,20 @@ a{
     color: red;
 }
 .half-width img{
-    width: 100%;   
+    width: 100%;  
+}
+.img-border{
+    position: relative; 
+}
+.img-border:after{
+    position: absolute;
+    content: "";
+    top: 30px;
+    right: 10px;
+    border-radius: 50%;
+    border: 30px solid orangered;
+    width: 50%;
+    height: 50%; 
 }
 
 
