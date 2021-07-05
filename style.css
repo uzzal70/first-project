@@ -228,6 +228,16 @@ textarea{
 
 }
 
+.input-group button{
+    width: 60%;
+    padding: 5px 20px;
+    background: crimson;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 50%;
+}
 /* Footer */
 footer{
     text-align: center;
@@ -453,3 +463,5 @@ footer{
         font-size: 12px;
     }
 }
+ 
+/* massage buttonk */
