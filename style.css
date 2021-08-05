@@ -107,7 +107,7 @@ a{
     font-size: 30px;
 }
 .half-width button{
-    padding:10px ;
+    padding:2px 15px;
     border-radius: 12px;
     background-image: linear-gradient(crimson, rgb(23, 23, 83));
 }
@@ -119,22 +119,23 @@ a{
 }
 .half-width img{
     width: 100%;
-    z-index:2;
+    z-index:1;
 }
 .img-border{
     position: relative; 
 }
-.img-border:after{
+
+.img-border:after {
     position: absolute;
     content: "";
-    top: 30px;
-    right: 10px;
-    border-radius: 50%;
-    border: 30px solid orangered;
-    width: 50%;
-    height: 50%;
+    top: 73px;
+    right: 35px;
+    border-radius: 5%;
+    border: 10px solid orangered;
+    width: 85%;
+    height: 85%;
+    z-index: 10;
 }
-
 
 /* About section */
 #about{
